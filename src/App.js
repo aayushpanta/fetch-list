@@ -7,7 +7,7 @@ import List from "./MyComponents/List";
 import About from "./MyComponents/About";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header title='User Data' />
         <Routes>
           <Route path="/" element={
@@ -45,7 +45,7 @@ function App() {
           <Route path="list" element={<List users={users}/>} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
