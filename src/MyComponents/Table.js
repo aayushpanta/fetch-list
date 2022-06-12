@@ -2,7 +2,7 @@ import React from 'react'
 
 const Table = ({users}) => {
     return (
-        <div className="w3-container w3-center w3-animate-left">
+        <div className="container">
             <table id='user1'>
                 <tr>
                     <th>#</th>
